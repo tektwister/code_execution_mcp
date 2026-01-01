@@ -6,25 +6,6 @@ The `code_execution_mcp` project follows the **Hexagonal Architecture** (also kn
 
 The architecture allows the core business logic to remain independent of external technologies. This makes the application easier to test, maintain, and extend.
 
-```mermaid
-graph TD
-    Client[Client (Claude/LLM)] -->|MCP Protocol| MCPAdapter[MCP Adapter]
-    
-    subgraph "Application Core"
-        direction TB
-        Ports[Ports (Interfaces)]
-        Domain[Domain Logic]
-        Ports --> Domain
-    end
-
-    subgraph "Infrastructure / Adapters"
-        MCPAdapter -->|Uses| Ports
-        ShellExec[Shell Executor] -.->|Implements| Ports
-        PyExec[Python Executor] -.->|Implements| Ports
-        GoExec[Go Executor] -.->|Implements| Ports
-    end
-```
-
 ## Layers
 
 The project is organized into three main layers:
