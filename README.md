@@ -22,6 +22,10 @@ A Model Context Protocol (MCP) server written in Go that provides code execution
 
 - **`code_executor`** - An intelligent prompt that helps LLMs choose the right tool based on the task description. Includes a decision framework and detailed documentation for each tool.
 
+## Architecture
+
+For a detailed explanation of the project's internal structure (Hexagonal Architecture), see [ARCHITECTURE.md](ARCHITECTURE.md).
+
 ## Download Pre-built Binaries
 
 [![Build Status](https://github.com/tektwister/code_execution_mcp/actions/workflows/build.yml/badge.svg)](https://github.com/tektwister/code_execution_mcp/actions/workflows/build.yml)
