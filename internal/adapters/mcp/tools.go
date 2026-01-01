@@ -28,25 +28,25 @@ func NewToolHandler(shellExec, pythonExec, goExec ports.CodeExecutor) *ToolHandl
 
 // BashInput represents input for bash/zsh script execution
 type BashInput struct {
-	Script     string   `json:"script" jsonschema:"description=The bash/zsh script to execute,required"`
-	Args       []string `json:"args,omitempty" jsonschema:"description=Optional command line arguments"`
-	WorkingDir string   `json:"working_dir,omitempty" jsonschema:"description=Optional working directory for execution"`
-	Timeout    int      `json:"timeout,omitempty" jsonschema:"description=Timeout in seconds (default 30, max 300)"`
+	Script     string   `json:"script"`
+	Args       []string `json:"args,omitempty"`
+	WorkingDir string   `json:"working_dir,omitempty"`
+	Timeout    int      `json:"timeout,omitempty"`
 }
 
 // PythonInput represents input for Python script execution
 type PythonInput struct {
-	Code       string   `json:"code" jsonschema:"description=Python code to execute,required"`
-	Args       []string `json:"args,omitempty" jsonschema:"description=Optional command line arguments accessible via sys.argv"`
-	WorkingDir string   `json:"working_dir,omitempty" jsonschema:"description=Optional working directory for execution"`
-	Timeout    int      `json:"timeout,omitempty" jsonschema:"description=Timeout in seconds (default 30, max 300)"`
+	Code       string   `json:"code"`
+	Args       []string `json:"args,omitempty"`
+	WorkingDir string   `json:"working_dir,omitempty"`
+	Timeout    int      `json:"timeout,omitempty"`
 }
 
 // GolangInput represents input for Go code execution
 type GolangInput struct {
-	Code       string `json:"code" jsonschema:"description=Go code to execute (must include package main and func main()),required"`
-	WorkingDir string `json:"working_dir,omitempty" jsonschema:"description=Optional working directory for execution"`
-	Timeout    int    `json:"timeout,omitempty" jsonschema:"description=Timeout in seconds (default 60, max 300)"`
+	Code       string `json:"code"`
+	WorkingDir string `json:"working_dir,omitempty"`
+	Timeout    int    `json:"timeout,omitempty"`
 }
 
 // RegisterTools registers all execution tools with the MCP server
