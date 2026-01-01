@@ -24,11 +24,11 @@ A Model Context Protocol (MCP) server written in Go that provides code execution
 
 ## Download Pre-built Binaries
 
-[![Build Status](https://github.com/YOUR_USERNAME/code_execution_mcp/actions/workflows/build.yml/badge.svg)](https://github.com/YOUR_USERNAME/code_execution_mcp/actions/workflows/build.yml)
+[![Build Status](https://github.com/tektwister/code_execution_mcp/actions/workflows/build.yml/badge.svg)](https://github.com/tektwister/code_execution_mcp/actions/workflows/build.yml)
 
 **No need to build from source!** Download the latest pre-built binaries for your platform:
 
-### [📥 Download Latest Release](https://github.com/YOUR_USERNAME/code_execution_mcp/releases/latest)
+### [📥 Download Latest Release](https://github.com/tektwister/code_execution_mcp/releases/latest)
 
 **Available platforms:**
 - 🪟 **Windows** (amd64) - `code_execution_mcp-windows-amd64.exe`
@@ -36,8 +36,6 @@ A Model Context Protocol (MCP) server written in Go that provides code execution
 - 🐧 **Linux** (ARM64) - `code_execution_mcp-linux-arm64`
 - 🍎 **macOS** (Intel) - `code_execution_mcp-darwin-amd64`
 - 🍎 **macOS** (Apple Silicon) - `code_execution_mcp-darwin-arm64`
-
-> **Note:** Replace `YOUR_USERNAME` with your GitHub username in the URLs above.
 
 **Automated builds:** Binaries are automatically built and released on every commit to the main branch.
 
